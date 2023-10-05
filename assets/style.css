@@ -1,19 +1,25 @@
 :root {
     --brown: #260B1D;
-    --tan: yellow;
+    --yellow: yellow;
     --orange: #D99036;
     --pink: #A66060;
     --black: #0D0D0D;
     /* https://color.adobe.com/Space-Voyagers-color-theme-acd4fe31-6b03-4dc0-863c-22566746fbba */
   }
 
-body {}
+body {
+  background-color: var(--brown);
+}
 
-header {}
+h1 {
+  color: var(--orange);
+}
 
-nav {}
+.form {}
 
-.filters {}
+.filters {
+  color: var(--pink);
+}
 
 .game-card {}
 
@@ -28,3 +34,7 @@ nav {}
 .current-Price {}
 
 .store-btn {}
+
+.search-Btn {
+  background-color: var(--pink);
+}

@@ -2,60 +2,47 @@
 <html lang="en-US">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
         <title>Group 5 Project</title>
     </head>
 
-    <body> 
+    <body class="bg-gray-400"> 
         <header>
-            <h1>Example Title</h1>
+            <h1 class="text-blue-900 text-center border-b py-4 font-bold">Not Amazon</h1>
         </header>
 
-        <div class="container">
-            <form action="">
-                <input type="text" placeholder="search bar" name="q">
+        <div class="text-center">
+            <form class="justify-center items-center py-2">
+                <input class="text-center w-screen h-14 rounded" type="text" placeholder="Enter Game Title" name="q">
                 <button type="submit"></button>
             </form>
         </div>
 
-        <section class="container" id="section-1">
-            <img src="html image.jpg" alt="mach1">
+        <main>
+        <!-- 8 total cards -->
+        <!-- img + 5 spans in each card -->
+        <div class="mt-8 flex grid grid-cols-4 gap-4 place-items-center">
+            <div class="bg-white rounded overflow-hidden shadow-md">
+                <img src="./assets/imgs/Arkham-Asylum-featured-image.jpg" alt="#" class="rounded p-1 mb-1 h-48 w-72">
+                <div class="text-center">
+                    <span class="font-bold">Title</span>
+                    <span class="block">Ratings</span>
+                    <span class="block">Current Price</span>
+                    <span class="block">Discounted Price</span>
+                    <button class="mb-2 border bg-gray-300 px-2 rounded">Store</button>
+                </div>
+            </div>
+        </div>
+        
+        
+
+        <!-- <section class="" id="section-1">
+            <img src="#" alt="">
             <h2>Game 1</h2>
-        </section>
+        </section> -->
 
-        <section class="container" id="section-1">
-            <img src="html image.jpg" alt="mach1">
-            <h2>Game 2</h2>
-        </section>
-
-        <section class="container" id="section-1">
-            <img src="html image.jpg" alt="mach1">
-            <h2>Game 3</h2>
-        </section>
-
-        <section class="container" id="section-1">
-            <img src="html image.jpg" alt="mach1">
-            <h2>Game 4</h2>
-        </section>
-
-        <section class="container" id="section-2">
-            <img src="html image.jpg" alt="mach1">
-            <h2>Game 5</h2>
-        </section>
-
-        <section class="container" id="section-2">
-            <img src="html image.jpg" alt="mach1">
-            <h2>Game 6</h2>
-        </section>
-
-        <section class="container" id="section-2">
-            <img src="html image.jpg" alt="mach1">
-            <h2>Game 7</h2>
-        </section>
-
-        <section class="container" id="section-2">
-            <img src="html image.jpg" alt="mach1">
-            <h2>Game 8</h2>
-        </section>
+    </main>
 
         
 

@@ -44,10 +44,9 @@ function cheapSharkFetch(e) {
                       class="rounded object-cover p-1 mb-1 h-42 w-64">
                   <div class="text-center">
                      <span class="game-Title font-bold">${idData[idList[i]].info.title}</span>
-                      <span class="ratings block">Ratings</span>
                       <span class="original-Price block text-red-600"><s>${idData[idList[i]].deals[0].retailPrice}</s></span>
                       <span class="font-bold current-Price block text-green-600">${idData[idList[i]].deals[0].price}</span>
-                      <button class="mt-2 mb-2 bg-gray-300 hover:bg-gray-400 px-4 py-2 rounded-full">Store</button>
+                      <button class="mt-2 mb-2 bg-gray-300 hover:bg-gray-400 px-4 py-2 rounded-full">${idData[idList[i]].deals[0].storeID}</button>
                 </div>
               </div>
             </div>

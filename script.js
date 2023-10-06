@@ -38,7 +38,7 @@ function cheapSharkFetch(e) {
           for (i = 0; i < limit; i++) {
             const divAppend = document.createElement('div')
             divAppend.innerHTML = `
-            <div class="mt-10 grid grid-cols-1 md:grid-cols-2 mx-20 lg:grid-cols-4 gap-2 place-items-center">
+            <div class="mt-10 mx-20 gap-2">
               <div class="game-card bg-white rounded overflow-hidden shadow-lg">
                   <img src=${idData[idList[i]].info.thumb} alt="#"
                       class="rounded object-cover p-1 mb-1 h-42 w-64">

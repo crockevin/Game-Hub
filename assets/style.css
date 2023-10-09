@@ -21,9 +21,7 @@ color: var(--orange);
 color: var(--pink);
 }
 
-.game-card {
-
-}
+.game-card {}
 
 .app-Name {}
 
@@ -40,11 +38,13 @@ background-color: var(--pink);
 color: var(--brown);
 }
 
-
 .search-Btn {
 background-color: var(--pink)
-
 }
+ .free-nav {
+  background-color: var(--brown);
+ }
+
 .hide {
 display: none;
 }

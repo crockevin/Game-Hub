@@ -1,24 +1,24 @@
 :root {
-    --brown: #260B1D;
-    --yellow: yellow;
-    --orange: #D99036;
-    --pink: #A66060;
-    --black: #0D0D0D;
-    /* https://color.adobe.com/Space-Voyagers-color-theme-acd4fe31-6b03-4dc0-863c-22566746fbba */
-  }
+  --brown: #260B1D;
+  --yellow: yellow;
+  --orange: #D99036;
+  --pink: #A66060;
+  --black: #0D0D0D;
+  /* https://color.adobe.com/Space-Voyagers-color-theme-acd4fe31-6b03-4dc0-863c-22566746fbba */
+}
 
 body {
-  background-color: var(--brown);
+background-color: var(--brown);
 }
 
 h1 {
-  color: var(--orange);
+color: var(--orange);
 }
 
 .form {}
 
 .filters {
-  color: var(--pink);
+color: var(--pink);
 }
 
 .game-card {}
@@ -26,15 +26,25 @@ h1 {
 .app-Name {}
 
 .game-Title {}
-  
+
 .ratings {}
 
 .original-Price {}
 
 .current-Price {}
 
-.store-btn {}
+.store-btn {
+background-color: var(--pink);
+color: var(--brown);
+}
 
 .search-Btn {
-  background-color: var(--pink);
+background-color: var(--pink)
+}
+ .free-nav {
+  background-color: var(--brown);
+ }
+
+.hide {
+display: none;
 }

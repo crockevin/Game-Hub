@@ -1,25 +1,21 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/style.css" />
-    <title>GameHub</title>
+    <title>GameHub, but free!</title>
 </head>
 
 <body>
     <header>
-        <h1 class="app-Name text-7xl text-center mt-10 font-extrabold">GameHub</h1>
+        <h1 class="app-Name text-7xl text-center mt-10 font-extrabold">Free Games</h1>
     </header>
 
-
-    <!-- <div class="hide"> -->
-
-
-    <!-- Search bar -->
-    <form class="form sm:mx-8 my-10 md:mx-44 my-10">
+    <!-- OPTIONAL Search bar -->
+    <!-- <form class="form mx-48 my-9">
         <label for="default-search"
             class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
         <div class="relative">
@@ -31,34 +27,22 @@
                 </svg>
             </div>
             <input type="search" id="default-search"
-                class="block w-full p-4 pl-10 text-sm text-gray-900 border border-[#A66060] rounded-xl bg-white-50 focus:ring-[#A66060] focus:border-[#A66060]"
+                class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-xl bg-white-50 focus:ring-gray-500 focus:border-gray-500"
                 placeholder="Search by title" required>
             <button type="submit"
-                class="search-Btn hover:bg-[#D99036] text-white bg-[#A66060] absolute right-2.5 bottom-2.5 focus:ring-4 focus:outline-none focus:ring-[#A66060] font-medium rounded-lg text-sm px-4 py-2">Search</button>
+                class="search-Btn text-white bg-[#A66060] absolute right-2.5 bottom-2.5 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-2">Search</button>
         </div>
-    </form>
+    </form> -->
 
-    <!-- Categories to display cards for -->
-    <div class="filters flex justify-center font-bold flex-wrap mb-10">
-        <button class=" store-btn hover:bg-[#D99036] mx-4 px-4 py-2 rounded-full mb-2">Popularity</button>
+    <!-- Nav / Filter options  -->
+    <div class="filters flex justify-center font-bold mt-14">
+        <button class="store-btn hover:bg-[#D99036] mx-4 px-4 py-2 rounded-full mb-2">Release Date</button>
+        <button class="store-btn hover:bg-[#D99036] mx-4 px-4 py-2 rounded-full mb-2">Popularity</button>
         <button class="store-btn hover:bg-[#D99036] mx-4 px-4 py-2 rounded-full mb-2">Alphabetical</button>
-        <button class="store-btn hover:bg-[#D99036] mx-4 px-4 py-2 rounded-full mb-2">Lowest Price</button>
-        <button class="store-btn hover:bg-[#D99036] mx-4 px-4 py-2 rounded-full mb-2">Free Games</button>
+        <button class="store-btn hover:bg-[#D99036] mx-4 px-4 py-2 rounded-full mb-2">Relevance</button>
     </div>
 
-
-    <main>
-        <!-- 8 total cards -->
-
-        <div id="appendArea" class="flex flex-wrap">
-
-        </div>
-
-    </main>
-
-    </div>
     <script src="./script.js"></script>
 </body>
-
 
 </html>

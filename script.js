@@ -4,6 +4,7 @@ var appendHere = document.querySelector('#appendArea')
 var noIdUrl = "https://www.cheapshark.com/api/1.0/games?ids="
 
 function cheapSharkFetch(e) {
+  appendHere.innerHTML = ''
   e.preventDefault()
   fetch("https://www.cheapshark.com/api/1.0/games?title=" + searchName.value)
     .then((response) => {
@@ -63,3 +64,4 @@ function cheapSharkFetch(e) {
     })
 }
 searchBtn.addEventListener('click', cheapSharkFetch)
+

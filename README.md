@@ -1,37 +1,50 @@
 # Project-1
 
-A little info about the project and/ or overview that explains **what** the project is about.
+For Project-1, 5 developers worked as a team to create an application that uses a CSS framework (taiwind), and 2 APIs. Through delegation of tasks, we've created an application that helps users to find a video game title of choice at its cheapest price and location to purchase it, while also providing titles for free to play games. The deployed application may be viewed through the section titled ## Deployed application link. 
 
 ## Motivation
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+This project exsists to help video game enthusiasts, or video game gifters, make sure they are purchasing a video game title at the best deal possible.
  
 ## Screenshots
-Include demo screenshots etc.
+
+![ScreenShot](./assets/imgs/GH-1.png)
+![ScreenShot](./assets/imgs/GH2.png)
 
 ## Tech/framework used
-Ex. -
 
-<b>Built with</b>
-- [Electron](https://electron.atom.io)
+<b>Built with:</b>
+- [Tailwindcss](https://tailwindcss.com/)
 
-## Features
-What makes your project stand out?
+<b>Languages used:</b>
+ - [HTML]
+ - [CSS]
+ - [Javascript]
+
+## Deployed application link
+
+Deplyed application: https://crockevin.github.io/Project-1/
 
 
 ## API Reference
 
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
+[API #1:] (https://apidocs.cheapshark.com/)
+[API #2:] ()
 
 
 ## How to use?
-If people like your project they’ll want to learn how they can use it. To do so include step by step guide to use your project.
-
+To use GameHub, use the search bar to type and search a video game title you'd like to find at the lowest price point possible. You will see all relevant video games, as well as their original price and discounted price. There are buttons to filter by, with the most important being the "Free Games" button. The Free Games button will load a new page that displays free to play games.
 
 ## Credits
-Give proper credits. This could be a link to any repo which inspired you to build this project, any blogposts or links to people who contrbuted in this project. 
+
+<b>Contributors:</b>
+
+Nic Diaz: https://github.com/nicanthoni
+Kevin Hedengren: https://github.com/crockevin
+Cesar Castro: https://github.com/SpacemanCeezer
+Rodney Xavier: https://github.com/Rex10K
+Brandon Greaux: https://github.com/BrandonG21
 
 
 ## License
-A short snippet describing the license (MIT, Apache etc)
 
-MIT © [Yourname]()
+MIT © [crockevin]()

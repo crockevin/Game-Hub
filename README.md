@@ -1,9 +1,9 @@
 # Project-1
 
-A little info about the project and/ or overview that explains **what** the project is about.
+For Project-1, 5 developers worked as a team to create an application that uses a CSS framework (taiwind), and 2 APIs. Through delegation of tasks, we've created an application that helps users to find a video game title of choice at its cheapest price and location to purchase it, while also providing titles for free to play games. The deployed application may be viewed through the section titled ## Deployed application link. 
 
 ## Motivation
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+This project exsists to help video game enthusiasts, or video game gifters, make sure they are purchasing a video game title at the best deal possible.
  
 ## Screenshots
 
@@ -47,4 +47,4 @@ Brandon Greaux: https://github.com/BrandonG21
 
 ## License
 
-MIT © [Yourname]()
+MIT © [crockevin]()

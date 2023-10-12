@@ -30,6 +30,11 @@ color: var(--pink);
   height: 45%; 
 
 }
+ 
+  height: 45%; 
+  
+}
+
 
 .app-Name {}
 
@@ -40,6 +45,7 @@ color: var(--pink);
 .original-Price {}
 
 .current-Price {}
+
 
 .store-btn {
 background-color: var(--pink);

@@ -28,7 +28,7 @@ Deplyed application: https://crockevin.github.io/Project-1/
 ## API Reference
 
 [API #1:] (https://apidocs.cheapshark.com/)
-[API #2:] ()
+[API #2:] (https://www.freetogame.com/api-doc)
 
 
 ## How to use?

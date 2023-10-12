@@ -214,10 +214,73 @@ function createBtn() {
     gameBtn.addEventListener("click", function() {
       console.log(this.textContent);
       var btnContent = this.textContent;
-        cheapSharkFetch(btnContent);
+        cheapSharkFetch2(btnContent);
         getStoreUrl(btnContent);
     })
   }
+}
+function cheapSharkFetch2(name) {
+  appendHere.innerHTML = ''
+  fetch("https://www.cheapshark.com/api/1.0/games?title=" + name)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error('An Error has occured');
+      }
+      return response.json();
+    })
+    .then((data) => {
+      var idListUrl = noIdUrl
+      var limit = 24
+      if (limit > data.length) {
+        limit = data.length
+      }
+      var idList = []
+      for (i = 0; i < limit; i++) {
+        idList.push(data[i].gameID)
+        idListUrl += data[i].gameID
+        if (i < limit - 1) {
+          idListUrl += ','
+        }
+      }
+      var storedSearch = data
+      fetch(idListUrl)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error('An Error has occured');
+          }
+          return response.json();
+        })
+        .then((idData) => {
+
+          for (i = 0; i < limit; i++) {
+            const divAppend = document.createElement('div')
+            divAppend.innerHTML = `
+            <div class="mt-10 mx-20 gap-2">
+              <div class="game-card bg-white rounded overflow-hidden shadow-lg">
+                  <img src=${idData[idList[i]].info.thumb} alt="#"
+                      class="image rounded object-cover p-1 mb-1 h-42 w-64 object-scaled-down">
+
+
+                  <div class="text-center">
+                     <span class="game-Title font-bold">${idData[idList[i]].info.title}</span>
+                      <span class="original-Price block text-red-600"><s>${idData[idList[i]].deals[0].retailPrice}</s></span>
+                      <span class="font-bold current-Price block text-green-600">${idData[idList[i]].deals[0].price}</span>
+                      <button class="mt-2 mb-2 bg-gray-300 hover:bg-gray-400 px-4 py-2 rounded-full"><a href = ${getStoreUrl(idData[idList[i]].deals[0].storeID)} target = '_blank'>Get Here</a></button>
+                </div>
+              </div>
+            </div>
+        `
+            appendHere.appendChild(divAppend)
+            console.log('Title: ' + idData[idList[i]].info.title)
+            console.log('Store ID: ' + idData[idList[i]].deals[0].storeID)
+            console.log('Price: ' + idData[idList[i]].deals[0].price)
+            console.log('Retail price: ' + idData[idList[i]].deals[0].retailPrice)
+            console.log('Savings: ' + idData[idList[i]].deals[0].savings)
+            console.log('Pic: ' + idData[idList[i]].info.thumb)
+            console.log(getStoreUrl(idData[idList[i]].deals[0].storeID))
+          }
+        })
+    })
 }
 
 searchBtn.addEventListener('click', cheapSharkFetch);

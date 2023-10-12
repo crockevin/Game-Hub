@@ -6,10 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/style.css" />
+    <!-- To link icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>GameHub, but free!</title>
 </head>
 
 <body>
+    <!-- Home btn -->
+    <nav>
+        <div>
+            <button class="home-Btn float-right mt-10 mr-10 hover:bg-[#D99036]">
+                <a href="https://crockevin.github.io/Game-Hub/" target="_self"><i class="fa-solid fa-house fa-2xl"
+                        style="color: #a66060;"></i></a>
+            </button>
+        </div>
+    </nav>
+    <br>
     <header>
         <h1 class="app-Name text-7xl text-center mt-10 font-extrabold">Free Games</h1>
     </header>
@@ -41,9 +55,9 @@
         <button class="store-btn hover:bg-[#D99036] mx-4 px-4 py-2 rounded-full mb-2">alphabetical</button>
         <button class="store-btn hover:bg-[#D99036] mx-4 px-4 py-2 rounded-full mb-2">relevance</button>
     </div>
-    <div id="appendArea2" class="flex flex-wrap place-content-center">
 
-    </div>
+    <!-- Cards appended via JS -->
+    <div id="appendArea2" class="flex flex-wrap place-content-center"></div>
 
 
     <script src="./freeGameFetch.js"></script>

@@ -21,7 +21,16 @@ color: var(--orange);
 color: var(--pink);
 }
 
-.game-card {}
+.game-card {
+  width: 16rem; 
+  height: 20rem; 
+}
+.game-card img {
+ 
+  height: 45%; 
+  
+}
+
 
 .app-Name {}
 
@@ -32,6 +41,7 @@ color: var(--pink);
 .original-Price {}
 
 .current-Price {}
+
 
 .store-btn {
 background-color: var(--pink);

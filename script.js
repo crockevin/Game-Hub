@@ -42,7 +42,7 @@ function cheapSharkFetch(e) {
             <div class="mt-10 mx-20 gap-2">
               <div class="game-card bg-white rounded overflow-hidden shadow-lg">
                   <img src=${idData[idList[i]].info.thumb} alt="#"
-                      class="rounded object-cover p-1 mb-1 h-42 w-64">
+                      class="image rounded object-cover p-1 mb-1 h-42 w-64 object-scale-down">
                   <div class="text-center">
                      <span class="game-Title font-bold">${idData[idList[i]].info.title}</span>
                       <span class="original-Price block text-red-600"><s>${idData[idList[i]].deals[0].retailPrice}</s></span>

@@ -22,7 +22,7 @@ This project exsists to help video game enthusiasts, or video game gifters, make
 
 ## Deployed application link
 
-Deplyed application: https://crockevin.github.io/Project-1/
+Deplyed application: https://crockevin.github.io/Game-Hub/
 
 
 ## API Reference

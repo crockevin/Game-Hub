@@ -1,8 +1,9 @@
 var searchName = document.getElementById('default-search')
+var gameName; 
 var searchBtn = document.querySelector('.search-Btn')
 var appendHere = document.querySelector('#appendArea')
 var noIdUrl = "https://www.cheapshark.com/api/1.0/games?ids="
-
+var storedSearches;
 
 function cheapSharkFetch(e) {
   appendHere.innerHTML = ''
@@ -196,5 +197,46 @@ function getStoreUrl(id) {
   }
   
 }
-searchBtn.addEventListener('click', cheapSharkFetch)
 
+
+function createBtn() {
+  storedSearches = JSON.parse(localStorage.getItem("Game")) || [];
+  var btnContainer = document.querySelector('.gameBtns');
+  btnContainer.textContent = '';
+  for (let i = 0; i < storedSearches.length; i++) {
+
+    var storedName = storedSearches[i];
+    var gameBtn = document.createElement('button');
+    gameBtn.classList.add("bg-[#A66060]", "hover:bg-[#D99036]", "mx-2", "px-2", "py-1", "rounded", "mb-2"
+    );
+    gameBtn.textContent = storedName;
+    btnContainer.appendChild(gameBtn);
+    gameBtn.addEventListener("click", function() {
+      console.log(this.textContent);
+      var btnContent = this.textContent;
+        cheapSharkFetch(btnContent);
+        getStoreUrl(btnContent);
+    })
+  }
+}
+
+searchBtn.addEventListener('click', cheapSharkFetch);
+
+searchBtn.addEventListener('click', function(event) {
+  event.preventDefault();
+  gameName = searchName.value.trim();
+  gameName = gameName.toUpperCase();
+  if (gameName !== "") {
+    storedSearches = JSON.parse(localStorage.getItem('Game')) || [];
+
+    if (!storedSearches.includes(gameName)) {
+      storedSearches.push(gameName);
+      localStorage.setItem("Game", JSON.stringify(storedSearches));
+      createBtn();
+    }
+    // function cheapSharkFetch(e);
+    // function getStoreUrl(id);
+  }
+})
+
+createBtn();

@@ -21,7 +21,15 @@ color: var(--orange);
 color: var(--pink);
 }
 
-.game-card {}
+.game-card {
+  width: 16rem; 
+  height: 20rem; 
+}
+.game-card img {
+
+  height: 45%; 
+
+}
 
 .app-Name {}
 

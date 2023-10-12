@@ -1,4 +1,4 @@
-# Project-1
+#  Game Hub
 
 For Project-1, 5 developers worked as a team to create an application that uses a CSS framework (taiwind), and 2 APIs. Through delegation of tasks, we've created an application that helps users to find a video game title of choice at its cheapest price and location to purchase it, while also providing titles for free to play games. The deployed application may be viewed through the section titled ## Deployed application link. 
 

@@ -8,54 +8,44 @@
 }
 
 body {
-background-color: var(--brown);
+  background-color: var(--brown);
 }
 
 h1 {
-color: var(--orange);
+  color: var(--orange);
 }
 
-.form {}
-
 .filters {
-color: var(--pink);
+  color: var(--pink);
 }
 
 .game-card {
-  width: 16rem; 
-  height: 20rem; 
+  width: 16rem;
+  height: 20rem;
 }
+
 .game-card img {
-
-  height: 45%; 
-
+  height: 45%;
 }
-
-
-
-.app-Name {}
-
-.game-Title {}
-
-.ratings {}
-
-.original-Price {}
-
-.current-Price {}
-
 
 .store-btn {
-background-color: var(--pink);
-color: var(--brown);
+  background-color: var(--pink);
+  color: var(--brown);
 }
 
 .search-Btn {
-background-color: var(--pink)
+  background-color: var(--pink)
 }
- .free-nav {
+
+.free-nav {
   background-color: var(--brown);
- }
+}
+
+.fa-house:hover {
+color: var(--orange);
+background-color: var(--orange);
+}
 
 .hide {
-display: none;
+  display: none;
 }

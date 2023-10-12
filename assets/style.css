@@ -26,6 +26,10 @@ color: var(--pink);
   height: 20rem; 
 }
 .game-card img {
+
+  height: 45%; 
+
+}
  
   height: 45%; 
   
